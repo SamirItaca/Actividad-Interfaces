@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Sabores del Mundo</title>
+    <script src="../index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Reserve your table</h1>
+
+        <nav>
+            <ul>
+                <li><a href="en_index.html">Home</a></li>
+                <li><a href="en_menu.html">Menu</a></li>
+                <li><a href="en_reserva.html">Reservations</a></li>
+                <li><a href="en_contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <label for="idioma">Language:</label>
+            <select id="idioma" name="idioma" onchange="cambiarIdioma(this.value)">
+                <option value="../es/es_reserva.html">Español</option>
+                <option value="en_reserva.html" selected>English</option>
+            </select>
+        </aside>
+    </header>
+
+    <main>
+        <section>
+
+            <h2>Reservation form</h2>
+
+            <form action="#" method="post">
+                <label for="nombre">Full name:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefono">Phone:</label><br>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br><br>
+
+                <label for="fecha">Reservation date:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+
+                <label for="personas">Number of people:</label><br>
+                <input type="number" id="personas" name="personas" min="1" max="10" required><br><br>
+
+                <input type="submit" value="Reservar">
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabores del Mundo</p>
+    </footer>
+</body>
+</html>

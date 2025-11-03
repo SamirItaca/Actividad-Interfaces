@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sabores del Mundo</title>
+    <script src="../index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Contact us</h1>
+
+        <nav>
+            <ul>
+                <li><a href="en_index.html">Home</a></li>
+                <li><a href="en_menu.html">Menu</a></li>
+                <li><a href="en_reserva.html">Reservations</a></li>
+                <li><a href="en_contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <label for="idioma">Language:</label>
+            <select id="idioma" name="idioma" onchange="cambiarIdioma(this.value)">
+                <option value="../es/es_contacto.html">Español</option>
+                <option value="en_contacto.html" selected>English</option>
+            </select>
+        </aside>
+    </header>
+
+    <main>
+        <section>
+
+            <h2>Location</h2>
+
+            <p>We are located at Calle Mayor 45, Madrid.</p>
+
+            <!-- Codigo google maps -->
+            <iframe 
+                src="https://www.google.com/maps?q=Madrid&output=embed" 
+                width="400" height="300" style="border:0;" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+
+        </section>
+
+        <section>
+            <h2>Contact information</h2>
+            <ul>
+                <li>Phone: +34 600 123 456</li>
+                <li>Email: info@saboresdelmundo.com</li>
+                <li>Hours: Monday to Sunday, 12:00 - 23:00</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabores del Mundo</p>
+    </footer>
+</body>
+</html>

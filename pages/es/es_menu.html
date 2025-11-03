@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Sabores del Mundo</title>
+    <script src="../index.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Menu del Restaurante</h1>
+
+        <!-- Menu de navegacion principal -->
+        <nav>
+            <ul>
+                <li><a href="es_index.html">Inicio</a></li>
+                <li><a href="es_menu.html">Menú</a></li>
+                <li><a href="es_reserva.html">Reservas</a></li>
+                <li><a href="es_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" name="idioma" onchange="cambiarIdioma(this.value)">
+                <option value="es_menu.html" selected>Español</option>
+                <option value="../en/en_menu.html">English</option>
+            </select>
+        </aside>
+    </header>
+
+    <main>
+        <section>
+            
+            <h2>Platos principales</h2>
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Plato</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paella Valenciana</td>
+                        <td>Arroz tradicional con mariscos y pollo</td>
+                        <td>14,50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Tacos Mexicanos</td>
+                        <td>Tortillas de maíz con carne, guacamole y salsa picante</td>
+                        <td>9,90 €</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="../../imagenes/paella.jpg" alt="Paella Valenciana" width="300">
+                <figcaption>Paella Valenciana</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Bebidas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Bebida</th>
+                        <th>Tamaño</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vino Tinto Rioja</td>
+                        <td>Copa</td>
+                        <td>3,50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Agua Mineral</td>
+                        <td>500 ml</td>
+                        <td>1,50 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabores del Mundo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Sabores del Mundo</title>
+    <script src="../index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Reserva tu mesa</h1>
+
+        <nav>
+            <ul>
+                <li><a href="es_index.html">Inicio</a></li>
+                <li><a href="es_menu.html">Menú</a></li>
+                <li><a href="es_reserva.html">Reservas</a></li>
+                <li><a href="es_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <label for="idioma">Idioma:</label>
+            <select id="idioma" name="idioma" onchange="cambiarIdioma(this.value)">
+                <option value="es_reserva.html" selected>Español</option>
+                <option value="../en/en_reserva.html">English</option>
+            </select>
+        </aside>
+    </header>
+
+    <main>
+        <section>
+
+            <h2>Formulario de reserva</h2>
+
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br><br>
+
+                <label for="fecha">Fecha de reserva:</label><br>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+
+                <label for="personas">Número de personas:</label><br>
+                <input type="number" id="personas" name="personas" min="1" max="10" required><br><br>
+
+                <input type="submit" value="Reservar">
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabores del Mundo</p>
+    </footer>
+</body>
+</html>

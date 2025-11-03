@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Sabores del Mundo</title>
+    <script src="../index.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Sabores del Mundo Restaurant</h1>
+
+        <!-- Menu de navegacion principal -->
+        <nav>
+            <ul>
+                <li><a href="en_index.html">Home</a></li>
+                <li><a href="en_menu.html">Menu</a></li>
+                <li><a href="en_reserva.html">Reservations</a></li>
+                <li><a href="en_contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Selector de idioma -->     
+        <!-- Usamos aside ya que los elementos dentro de el no son principal, si no auxiliares -->     
+        <aside>
+            <label for="idioma">Language:</label>
+            <select id="idioma" name="idioma" onchange="cambiarIdioma(this.value)">
+                <option value="../es/es_index.html">Español</option>
+                <option value="en_index.html" selected>English</option>
+            </select>
+        </aside>
+    </header>
+
+    <main>
+        <!-- Sección de presentación -->
+        <section>
+            <h2>Welcome to Sabores del Mundo</h2>
+            <article>
+                <p>At our restaurant, we combine tradition and modernity in every dish. Enjoy international flavors with fresh, local ingredients.</p>                
+                <figure>
+                    <img src="../../imagenes/restaurante.jpeg" alt="Restaurant view" width="400">
+                    <figcaption>Our main dining room</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sabores del Mundo | All rights reserved</p>
+    </footer>
+</body>
+</html>
